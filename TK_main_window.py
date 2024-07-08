@@ -1,9 +1,12 @@
 import tkinter as tk
 from tkinter import ttk, messagebox
 import pandas as pd
+import os
 
 # Чтение данных из CSV файла
-data = pd.read_csv(r'F:\MUIV\PredPrak\PredPrak\output.csv')
+relative_path = "output.csv"
+absolute_path = os.path.abspath(relative_path)
+data = pd.read_csv(absolute_path)
 
 # Функция для добавления переноса строки после 100 символов
 def add_line_breaks(text, length):
