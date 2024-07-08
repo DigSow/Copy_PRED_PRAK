@@ -12,7 +12,7 @@ driver = webdriver.Chrome(service=svc)
 CommClear = []  # Список для хранения комментариев и оценок
 
 Email = "kirik-novo@bk.ru"
-#Password = "Ozenib23"
+Password = "Ozenib23"
 
 # Открытие начальной страницы с отзывами
 driver.get("https://www.ucheba.ru/uz/5904/opinions?")
